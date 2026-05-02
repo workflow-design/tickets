@@ -40,9 +40,9 @@ Every role on this list uses the same flow: install one Claude skill, then chat 
 One `curl`, one skill, every role on the list. The skill pulls in the role page, the company profile, and any other context it needs.
 
 ```bash
-mkdir -p ~/.claude/skills/apply-on-tickets
-curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills/apply-on-tickets/SKILL.md \
-  -o ~/.claude/skills/apply-on-tickets/SKILL.md
+mkdir -p ~/.claude/skills/tickets-apply
+curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills/tickets-apply/SKILL.md \
+  -o ~/.claude/skills/tickets-apply/SKILL.md
 ```
 
 ### 2. Open Claude and apply
@@ -70,9 +70,9 @@ By subscribing or applying, you agree to the [Candidate Terms](./CANDIDATE_TERMS
 Get an email when a new project matching your stack goes up. Unsubscribe anytime.
 
 ```bash
-mkdir -p ~/.claude/skills/subscribe-to-tickets
-curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills/subscribe-to-tickets/SKILL.md \
-  -o ~/.claude/skills/subscribe-to-tickets/SKILL.md
+mkdir -p ~/.claude/skills/tickets-subscribe
+curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills/tickets-subscribe/SKILL.md \
+  -o ~/.claude/skills/tickets-subscribe/SKILL.md
 ```
 
 Then in Claude:
@@ -93,7 +93,7 @@ What you get:
 
 - **Distribution to people who don't browse job boards.** The applicant list is selected for the philosophy above — escalating trust, async, outcome-driven. Generic candidates self-deselect.
 - **Richer applications than a resume drop.** The Claude skill assembles a complete package and pushes back on weak pitches before submission.
-- **A listing that actually attracts good people.** The `list-on-tickets` skill writes in a voice that respects engineers — concrete, honest about the hard part, no "rock star" filler. Strong listings convert; generic ones don't.
+- **A listing that actually attracts good people.** The `tickets-list` skill writes in a voice that respects engineers — concrete, honest about the hard part, no "rock star" filler. Strong listings convert; generic ones don't.
 - **Zero lock-in.** No exclusivity, no contract with us, no fees. Hire whoever you want, however you want. We're a list, not an agency.
 - **Mutually beneficial.** More good projects on the list strengthens the inbound flow for every employer. That's the whole reason this is free.
 
@@ -101,12 +101,12 @@ The trade is simple: you write a clear brief, we route it to the right people. Q
 
 ### How to list
 
-The fastest way is to install the `list-on-tickets` Claude skill — it interviews you, drafts the role and company files in the Tickets voice, and opens the PR for you.
+The fastest way is to install the `tickets-list` Claude skill — it interviews you, drafts the role and company files in the Tickets voice, and opens the PR for you.
 
 ```bash
-mkdir -p ~/.claude/skills/list-on-tickets
-curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills/list-on-tickets/SKILL.md \
-  -o ~/.claude/skills/list-on-tickets/SKILL.md
+mkdir -p ~/.claude/skills/tickets-list
+curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills/tickets-list/SKILL.md \
+  -o ~/.claude/skills/tickets-list/SKILL.md
 ```
 
 Then in Claude:
@@ -150,9 +150,9 @@ By submitting a project, you agree to the [Employer Terms](./EMPLOYER_TERMS.md).
 ├── guides/                         # how to start out with fractional work
 │   ├── EMPLOYERS.md
 │   └── CANDIDATES.md
-├── skills/apply-on-tickets/        # universal apply-to-any-role Claude skill
-├── skills/subscribe-to-tickets/    # candidate subscribe-for-alerts Claude skill
-└── skills/list-on-tickets/         # employer listing-author Claude skill
+├── skills/tickets-apply/        # universal apply-to-any-role Claude skill
+├── skills/tickets-subscribe/    # candidate subscribe-for-alerts Claude skill
+└── skills/tickets-list/         # employer listing-author Claude skill
 ```
 
 ## License

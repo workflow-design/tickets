@@ -1,5 +1,5 @@
 ---
-name: list-on-tickets
+name: tickets-list
 description: Help an employer create a high-quality listing on Tickets — a fractional engineering and design jobs list at github.com/workflow-design/tickets. Use whenever the user wants to post a project, list a role, hire a fractional engineer/designer through Tickets, add a company profile, or open a PR against the workflow-design/tickets repo. Walks the employer through a stakeholder-style interview, drafts the role and company markdown files following the Tickets voice, places them in the repo, and prepares a PR.
 ---
 
@@ -40,7 +40,7 @@ Run this as a conversation, not a form. Ask 1–3 questions at a time. Don't dum
 7. **What's the type of work?** Engineering, Design, Product, or a mix.
 8. **Who's the stakeholder?** Name, title, LinkedIn. The person the contractor will report to.
 9. **What does the first week look like?** Concrete deliverables.
-10. **What's the apply path?** Default: reuse the existing `apply-on-tickets` Claude skill flow if the employer wants to wire into Linear, or a fallback email. If the employer wants their own skill, note it for a follow-up.
+10. **What's the apply path?** Default: reuse the existing `tickets-apply` Claude skill flow if the employer wants to wire into Linear, or a fallback email. If the employer wants their own skill, note it for a follow-up.
 
 ### About the company (skip if their company profile already exists in `companies/`)
 
@@ -120,7 +120,7 @@ The hard part: [the specific thing that would trip up a mediocre engineer/design
 
 ### Apply in Claude (preferred)
 
-[Reuse the `apply-on-tickets` skill instructions, or link to a custom skill if one is being shipped in the same PR.]
+[Reuse the `tickets-apply` skill instructions, or link to a custom skill if one is being shipped in the same PR.]
 
 ### Email fallback
 
@@ -172,7 +172,15 @@ Before staging the files for commit, walk the user through this checklist:
 4. **Trust signals are concrete?** "100+ projects on Upwork at 4.9★" is a signal. "We value quality" is not.
 5. **No banned phrases?** Search for them.
 
-Show the user the final markdown for both files. Get explicit confirmation.
+Show the user the final markdown for both files.
+
+**Then ask, verbatim: "Open a PR with these files? (yes / edit / cancel)" and wait for their reply.**
+
+- "yes" → continue to the PR step.
+- "edit" or any change → fix, re-show, ask again.
+- "cancel" or silence → STOP. Save the markdown locally for reuse later.
+
+Do not push or open a PR without an explicit yes on this turn.
 
 ## Opening the PR (terminal step — always do this)
 
@@ -215,5 +223,5 @@ If `gh` is unavailable, fall back to `git push` and print the exact GitHub compa
 
 - **Employer wants to keep some details confidential** (rate, exact stakeholder identity): write the listing without them, but note in the PR description that some details will be shared with applicants directly.
 - **Employer doesn't have a company profile yet and isn't sure what to put:** offer to draft from publicly available info (website, LinkedIn) and let them edit.
-- **Employer is unsure about the apply path:** default to the existing `apply-on-tickets` skill flow with their email as the fallback contact. Note that wiring up a custom Linear/Slack pipeline is a follow-up PR.
+- **Employer is unsure about the apply path:** default to the existing `tickets-apply` skill flow with their email as the fallback contact. Note that wiring up a custom Linear/Slack pipeline is a follow-up PR.
 - **Employer wants to post multiple roles:** run the interview once per role, but only create one company profile.

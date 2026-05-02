@@ -45,9 +45,9 @@ _TODO — first deliverable. (e.g. "Three headline + lede options, three example
 ### Apply in Claude
 
 ```bash
-mkdir -p ~/.claude/skills/apply-on-tickets
-curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills/apply-on-tickets/SKILL.md \
-  -o ~/.claude/skills/apply-on-tickets/SKILL.md
+mkdir -p ~/.claude/skills/tickets-apply
+curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills/tickets-apply/SKILL.md \
+  -o ~/.claude/skills/tickets-apply/SKILL.md
 ```
 
 Then in Claude:

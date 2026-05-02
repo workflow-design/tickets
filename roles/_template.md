@@ -35,12 +35,12 @@ The hard part: [one specific thing that would trip up a mediocre engineer/design
 
 ## How to apply
 
-All roles on Tickets use the universal `apply-on-tickets` skill. Standard install:
+All roles on Tickets use the universal `tickets-apply` skill. Standard install:
 
 ```bash
-mkdir -p ~/.claude/skills/apply-on-tickets
-curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills/apply-on-tickets/SKILL.md \
-  -o ~/.claude/skills/apply-on-tickets/SKILL.md
+mkdir -p ~/.claude/skills/tickets-apply
+curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills/tickets-apply/SKILL.md \
+  -o ~/.claude/skills/tickets-apply/SKILL.md
 ```
 
 Then in Claude:

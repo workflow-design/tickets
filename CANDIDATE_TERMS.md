@@ -6,7 +6,7 @@ Tickets is a community list of fractional engineering, design, product, and foun
 
 - We accept role listings from employers, lightly review them for fit and clarity, and publish them to this public repository.
 - We may email subscribers when a new role matches the disciplines and stack they specified.
-- We forward applications submitted via the `apply-on-tickets` skill (or any other channel we support) to the employer who posted the role, typically by creating an issue in their tracking system.
+- We forward applications submitted via the `tickets-apply` skill (or any other channel we support) to the employer who posted the role, typically by creating an issue in their tracking system.
 
 ## 2. What we don't do
 

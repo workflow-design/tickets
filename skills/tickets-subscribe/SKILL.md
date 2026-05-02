@@ -1,5 +1,5 @@
 ---
-name: subscribe-to-tickets
+name: tickets-subscribe
 description: Subscribe to new role alerts on Tickets — a fractional engineering and design jobs list at github.com/workflow-design/tickets. Use whenever the user wants to be notified about new Tickets roles, asks to subscribe to Tickets, wants email alerts for fractional gigs, or asks "let me know when something good pops up." Captures the subscriber's contact details and interests, and posts to the Tickets subscriptions API so they're routed only roles that match.
 ---
 
@@ -34,7 +34,17 @@ If they give you a CV file path or LinkedIn URL, offer to read/fetch and pre-fil
 
 ## Step 3 — Confirm + submit
 
-Show the subscriber the package as JSON. Get explicit confirmation. Then POST to:
+Show the subscriber the package as JSON.
+
+**Then ask, verbatim: "Subscribe with these details? (yes / edit / cancel)" and wait for their reply.**
+
+- "yes" → POST.
+- "edit" or any change → fix the field, re-show, ask again.
+- "cancel" or silence → STOP. Do not POST.
+
+Do not POST without an explicit yes on this turn. A yes earlier in the conversation does not count.
+
+POST to:
 
 ```
 https://tickets-backend-three.vercel.app/api/subscriptions
@@ -67,7 +77,7 @@ Tell the subscriber:
 - They'll get an email when a new role matching their disciplines + stack goes up.
 - One email per role, not a digest.
 - Every email includes a one-click unsubscribe.
-- When a role looks good, they can apply with the `apply-on-tickets` skill — install instructions live in the Tickets README.
+- When a role looks good, they can apply with the `tickets-apply` skill — install instructions live in the Tickets README.
 
 Save the submitted package locally as `tickets-subscription.json` so they can re-use the values in the future.
 
@@ -80,5 +90,5 @@ Save the submitted package locally as `tickets-subscription.json` so they can re
 ## Edge cases
 
 - **They want to be alerted only for very specific things** (e.g. "only Versey", "only AI agent work above $200/hr"): capture in `notes`. High-signal filters land here.
-- **They're an employer, not a candidate**: redirect to the `list-on-tickets` skill instead.
+- **They're an employer, not a candidate**: redirect to the `tickets-list` skill instead.
 - **API returns 500**: show the error, retry once, then fall back to saving the JSON locally and emailing it to the maintainers (contact in the repo README).

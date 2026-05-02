@@ -1,5 +1,5 @@
 ---
-name: apply-on-tickets
+name: tickets-apply
 description: Apply to any open role on Tickets — a fractional engineering and design jobs list at github.com/workflow-design/tickets. Use whenever the user wants to apply to a Tickets role, asks about a Versey project, references a roles/<slug>.md file from this list, or wants to submit an application to any company listed on Tickets. The skill fetches the role page and any related context (company profile, brief), interviews the candidate, and submits a structured application to the role's apply endpoint.
 ---
 
@@ -89,7 +89,15 @@ Before submitting, check:
 2. **Are the links real and public?** Click-test by fetching them. Don't submit broken links.
 3. **Does the candidate clearly understand the contract shape and rate?**
 
-Show the candidate the final package as JSON. Get explicit confirmation before submitting.
+Show the candidate the final package as JSON.
+
+**Then ask, verbatim: "Submit this application? (yes / edit / cancel)" and wait for their reply.**
+
+- "yes" (or any clear affirmative) → continue to Step 6.
+- "edit" or any specific change → loop back to whichever field they want to change, then re-show the final package and ask again.
+- "cancel" or silence on this question → STOP. Do not submit. Save the JSON locally so they can resume later.
+
+Do not POST without an explicit yes on this turn. A previous yes earlier in the conversation does not count.
 
 ## Step 6 — Submit
 

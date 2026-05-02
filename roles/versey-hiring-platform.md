@@ -13,7 +13,7 @@
 
 ## What you'd build
 
-The candidate-side frontend already ships. [Tickets](https://github.com/workflow-design/tickets) is live, the `apply-on-tickets` and `subscribe-to-tickets` skills work, applications flow into Linear, Slack pings on submit. **You are not building that.**
+The candidate-side frontend already ships. [Tickets](https://github.com/workflow-design/tickets) is live, the `tickets-apply` and `tickets-subscribe` skills work, applications flow into Linear, Slack pings on submit. **You are not building that.**
 
 You'd own the two pieces around it:
 
@@ -68,12 +68,12 @@ End-to-end, including the eval harness. ~$2.5k. If it ships well, ticket two is 
 
 ### Apply in Claude
 
-Install the universal `apply-on-tickets` skill:
+Install the universal `tickets-apply` skill:
 
 ```bash
-mkdir -p ~/.claude/skills/apply-on-tickets
-curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills/apply-on-tickets/SKILL.md \
-  -o ~/.claude/skills/apply-on-tickets/SKILL.md
+mkdir -p ~/.claude/skills/tickets-apply
+curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills/tickets-apply/SKILL.md \
+  -o ~/.claude/skills/tickets-apply/SKILL.md
 ```
 
 Then in Claude:
