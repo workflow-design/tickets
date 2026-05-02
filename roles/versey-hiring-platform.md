@@ -1,12 +1,8 @@
 # Automate Versey's Hiring Backend + Outreach
 
 **Company:** [Versey](../companies/versey.md)
-**Type:** Fractional AI Engineering · ongoing, ~10–20 hrs/week
-**Stakeholder:** [Will Taylor, CEO](https://www.linkedin.com/in/wrftaylor/)
+**Type:** Engineering — Fractional AI Engineering · ongoing, ~10–20 hrs/week
 **Rate:** $200–400/hr (L5 → L6 band)
-**Minimum earning per ticket:** $4k (~2 days at the L5 floor)
-**Seniority:** Senior to Staff (L5–L6) — match the candidate to the work
-**Rate verified:** levels.fyi · Software Engineer (AI / ML) · SF Bay Area · L5–L6 · P50 · fetched 2026-04-27 · [levels.fyi/t/software-engineer/focus/ai-ml/locations/san-francisco-bay-area](https://www.levels.fyi/t/software-engineer/focus/ai-ml/locations/san-francisco-bay-area)
 **Status:** Open
 
 ---
@@ -66,9 +62,7 @@ End-to-end, including the eval harness. ~$2.5k. If it ships well, ticket two is 
 
 ## How to apply
 
-### Apply in Claude
-
-Install the universal `tickets-apply` skill:
+All roles on Tickets use the universal `tickets-apply` skill. Standard install:
 
 ```bash
 mkdir -p ~/.claude/skills/tickets-apply
@@ -81,5 +75,3 @@ Then in Claude:
 ```
 Apply to versey-hiring-platform on Tickets
 ```
-
-The skill pulls in this role page, the Versey company profile, and the brief; helps you sharpen your pitch; and submits a structured package that lands in Versey's Linear board with a Slack ping to Will.
