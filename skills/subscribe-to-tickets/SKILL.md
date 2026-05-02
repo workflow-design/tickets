@@ -66,7 +66,7 @@ Tell the subscriber:
 
 - They'll get an email when a new role matching their disciplines + stack goes up.
 - One email per role, not a digest.
-- They can unsubscribe by replying UNSUBSCRIBE to any message.
+- Every email includes a one-click unsubscribe.
 - When a role looks good, they can apply with the `apply-on-tickets` skill — install instructions live in the Tickets README.
 
 Save the submitted package locally as `tickets-subscription.json` so they can re-use the values in the future.
@@ -79,6 +79,6 @@ Save the submitted package locally as `tickets-subscription.json` so they can re
 
 ## Edge cases
 
-- **They want to be alerted only for very specific things** (e.g. "only Versey", "only AI agent work above $200/hr"): capture in `notes`. The matching system reads `notes` for high-signal filters.
+- **They want to be alerted only for very specific things** (e.g. "only Versey", "only AI agent work above $200/hr"): capture in `notes`. High-signal filters land here.
 - **They're an employer, not a candidate**: redirect to the `list-on-tickets` skill instead.
 - **API returns 500**: show the error, retry once, then fall back to saving the JSON locally and emailing it to the maintainers (contact in the repo README).

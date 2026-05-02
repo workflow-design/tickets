@@ -11,7 +11,7 @@ This is the **only** apply skill. It works for every role on the list. Different
 
 ## How the skill works
 
-The candidate names a role (or you ask them to). You fetch the role file from GitHub raw, read it, fetch any linked context (the company profile, optionally `BRIEF.md` if linked), interview the candidate, sharpen their pitch, and POST a structured application to the Tickets applications API. The API routes it to the employer's pipeline.
+The candidate names a role (or you ask them to). You fetch the role file from GitHub raw, read it, fetch any linked context (the company profile, optionally `BRIEF.md` if linked), interview the candidate, sharpen their pitch, and POST a structured application to the Tickets applications API.
 
 ## Step 1 — Identify the role
 
@@ -99,7 +99,7 @@ POST to the Tickets applications endpoint:
 https://tickets-backend-three.vercel.app/api/applications
 ```
 
-Payload shape (always include the `role` slug — this is how the API routes the application to the right employer pipeline):
+Payload shape (always include the `role` slug — this is how the application gets attached to the right listing):
 
 ```bash
 curl -X POST https://tickets-backend-three.vercel.app/api/applications \
@@ -126,10 +126,9 @@ If the request fails, show the error and offer to retry once. If it still fails,
 
 Tell the candidate:
 
-- Their application is in the employer's pipeline (typically Linear)
-- The employer gets a Slack alert
-- They'll hear back per the timeline stated in the role file (default: within 48 hours if it's a fit)
-- Save the submitted package locally as `tickets-application-<slug>.json` so they can reuse it for future Tickets roles
+- Their application is submitted. Show the `url` from the response so they can re-find the role page.
+- They'll hear back per the timeline stated in the role file (default: within 48 hours if it's a fit).
+- Save the submitted package locally as `tickets-application-<slug>.json` so they can reuse it for future Tickets roles.
 
 If they want to apply to another role, this skill handles it — they just say so. Reuse what you already have where possible.
 
