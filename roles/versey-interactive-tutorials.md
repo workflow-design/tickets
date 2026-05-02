@@ -1,15 +1,10 @@
 # Build Interactive Tutorials for the Versey App
 
 **Company:** [Versey](../companies/versey.md)
-**Type:** Product + Design + Frontend
-**Stakeholder:** [Will Taylor, CEO](https://www.linkedin.com/in/wrftaylor/)
+**Type:** Design — Product + Design + Frontend
 **Rate:** $150–225/hr (L4 → L5 band)
-**Minimum earning per ticket:** $3k (~2 days at the L4 floor)
-**Seniority:** Mid to Senior (L4–L5) — match the candidate to the work
-**Rate verified:** levels.fyi · Frontend Software Engineer · SF Bay Area · L4–L5 · P50 · fetched 2026-04-27 · [levels.fyi/t/software-engineer/focus/front-end/locations/san-francisco-bay-area](https://www.levels.fyi/t/software-engineer/focus/front-end/locations/san-francisco-bay-area)
-**Stack:** `apps/web` — Next.js 16, React 19, Tailwind 4. There's an existing `scripts/build-tutorials.mjs` scaffold to inherit and extend.
-**Estimated hours:** _TODO_
-**Status:** Coming soon
+**Stack:** apps/web — Next.js 16, React 19, Tailwind 4. There's an existing scripts/build-tutorials.mjs scaffold to inherit and extend.
+**Status:** Open
 
 ---
 
@@ -39,7 +34,7 @@ _TODO — first deliverable. (e.g. "Tutorial flow for the single most-important 
 
 ## How to apply
 
-### Apply in Claude
+All roles on Tickets use the universal `tickets-apply` skill. Standard install:
 
 ```bash
 mkdir -p ~/.claude/skills/tickets-apply
