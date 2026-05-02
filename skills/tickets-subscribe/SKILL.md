@@ -9,6 +9,14 @@ You are helping someone subscribe to alerts for new roles on **Tickets** — `gi
 
 The point: keep it short. Subscribing should take a minute. The fewer questions you ask, the more likely they finish.
 
+## Step 0 — Load profile
+
+Read `~/.claude/skills/tickets-profile/profile.json`. If present, pre-fill `name`, `email`, `disciplines`, `stack`, `min_rate`, `availability`, `current_title`, and the `links` block (`github`/`linkedin`/`portfolio` from the profile flat fields).
+
+If everything required is already in the profile, skip straight to confirm. Only ask for whatever's missing.
+
+If `--no-profile` is passed, skip the load.
+
 ## Step 1 — Confirm
 
 Confirm what they're subscribing to: an email when a new role goes up that matches their interests. No spam, no recruiter outreach, no shared list with third parties.
@@ -79,7 +87,7 @@ Tell the subscriber:
 - Every email includes a one-click unsubscribe.
 - When a role looks good, they can apply with the `tickets-apply` skill — install instructions live in the Tickets README.
 
-Save the submitted package locally as `tickets-subscription.json` so they can re-use the values in the future.
+If they don't already have a Tickets profile, offer once: "Want me to save your details locally so apply/list/subscribe all auto-fill in future?" → invoke `tickets-profile`. If they already have a profile and any new fields were collected this turn (e.g. they added `min_rate`), offer to patch the profile too.
 
 ## Tone
 

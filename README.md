@@ -63,6 +63,22 @@ Claude will ask which role, fetch the role page and company profile, help you sh
 
 By subscribing or applying, you agree to the [Candidate Terms](./CANDIDATE_TERMS.md).
 
+### Optional: save a profile so apply / list / subscribe auto-fill
+
+```bash
+mkdir -p ~/.claude/skills/tickets-profile
+curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills/tickets-profile/SKILL.md \
+  -o ~/.claude/skills/tickets-profile/SKILL.md
+```
+
+Then in Claude:
+
+```
+Set up my Tickets profile
+```
+
+The profile (name, email, disciplines, stack, links, availability) lives only on your machine at `~/.claude/skills/tickets-profile/profile.json`. With it set, `tickets-list` only shows roles that match, `tickets-apply` only asks you for the pitch, and `tickets-subscribe` is one confirm away.
+
 ---
 
 ## Subscribe
@@ -138,6 +154,7 @@ By posting a project, you agree to the [Employer Terms](./EMPLOYER_TERMS.md).
 ├── skills/tickets-apply/        # candidate: apply to a role
 ├── skills/tickets-subscribe/    # candidate: subscribe to alerts
 ├── skills/tickets-list/         # browse open roles
+├── skills/tickets-profile/      # candidate: local profile that pre-fills the others
 └── skills/tickets-post/         # employer: post a role
 ```
 
