@@ -1,0 +1,7 @@
+{
+  "name": "tickets",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tickets — fractional engineering and design jobs list. Apply by chatting with Claude.",
+  "license": "MIT"
+}
