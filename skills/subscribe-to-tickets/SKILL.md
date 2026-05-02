@@ -26,11 +26,11 @@ Ask in a short, conversational way. Keep it to two or three messages, not a form
 **Optional:**
 - `min_rate` — minimum hourly rate they'd consider (default: $150–200/hr is the floor on Tickets)
 - `availability` — hours/week they could pick up
-- `current_role` — one line on their day job / current situation, so we know how to weight roles ("EM at scaleup, looking for evening AI gigs", "between things, full-time available")
+- `current_title` — one line on their day job / current situation, so we know how to weight roles ("EM at scaleup, looking for evening AI gigs", "between things, full-time available")
 - `links` — GitHub, LinkedIn, portfolio — only one of these required if any. Helps the employer reach out faster if a match lands.
 - `notes` — anything else
 
-If they give you a CV file path or LinkedIn URL, offer to read/fetch and pre-fill `stack`, `current_role`, and `links`.
+If they give you a CV file path or LinkedIn URL, offer to read/fetch and pre-fill `stack`, `current_title`, and `links`.
 
 ## Step 3 — Confirm + submit
 
@@ -52,7 +52,7 @@ curl -X POST https://tickets-backend-three.vercel.app/api/subscriptions \
     "stack": "...",
     "min_rate": "...",
     "availability": "...",
-    "current_role": "...",
+    "current_title": "...",
     "links": { "github": "...", "linkedin": "...", "portfolio": "..." },
     "notes": "..."
   }'
