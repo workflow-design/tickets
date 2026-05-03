@@ -17,7 +17,7 @@ You'd own the two pieces around it:
 
 **2. Outreach engine.** Source candidates from X, LinkedIn, GitHub, Reddit, HN. Score against open Linear tickets. Send first-touch messages that don't read like recruiter slop. Parse replies, route warm ones into the funnel, drop cold ones cleanly. The eval loop is the work, not a side quest.
 
-The unedited stakeholder voice on the broader vision is in [`BRIEF.md`](../BRIEF.md) — read it for context, but your scope is what's above. Versey is **not** asking you to rebuild the candidate side or the platform.
+Versey is **not** asking you to rebuild the candidate side or the platform.
 
 ## The hard part
 
