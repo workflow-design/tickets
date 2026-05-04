@@ -8,7 +8,7 @@
 **Seniority:** Mid to Senior (L4–L5) with motion specialism — specialism beats level here
 **Rate verified:** levels.fyi · Frontend Software Engineer (motion comparable) · SF Bay Area · L4–L5 · P50 · fetched 2026-04-27 · [levels.fyi/t/software-engineer/focus/front-end/locations/san-francisco-bay-area](https://www.levels.fyi/t/software-engineer/focus/front-end/locations/san-francisco-bay-area)
 **Stack:** `apps/www` — Astro 5.7 on Vercel. Pairs naturally with the homepage Astro rebuild (`versey-homepage-astro`).
-**Estimated hours:** _TODO_
+**Estimated hours:** ~30–50 hrs (hero + 2–3 scroll-driven sections, behind a feature flag, with Lighthouse + conversion baselines)
 **Status:** Coming soon
 
 ---
@@ -25,17 +25,16 @@ The hard part: motion that lifts conversion without tanking LCP or annoying anyo
 
 - A measurable outcome. We instrument before/after.
 - A design surface where motion is the work, not a footnote.
-- _TODO — anything else?_
 
 ## What we're looking for
 
 - Has shipped homepage / landing animations on a real product. Can show before/after, or talk about why specific frames are timed the way they are.
 - Strong CSS + a motion library of choice (Framer Motion / GSAP / CSS-only). Justify the pick.
-- _TODO — frontend stack of the existing homepage. Probably Astro after the homepage rebuild lands._
+- Comfortable in Astro on Vercel — the homepage lives in `apps/www`.
 
 ## First ticket
 
-_TODO — first deliverable. (e.g. "Hero animation shipped behind a feature flag with before/after Lighthouse + conversion baselines.")_
+Hero animation shipped behind a feature flag with before/after Lighthouse + conversion baselines.
 
 ## How to apply
 

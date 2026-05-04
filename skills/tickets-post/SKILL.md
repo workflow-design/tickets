@@ -1,6 +1,6 @@
 ---
 name: tickets-post
-description: Post a new role on Tickets — a fractional engineering and design jobs list at github.com/workflow-design/tickets. Use whenever an employer wants to post a project, list a role, hire a fractional engineer/designer through Tickets, or add a company profile. Walks the employer through a stakeholder-style interview, drafts the listing in the Tickets voice, and submits it to the Tickets backend.
+description: Post a new role on Tickets — a fractional engineering and design jobs list at github.com/workflow-design/tickets. Use whenever an employer wants to post a project, list a role, hire a fractional engineer/designer through Tickets, or add a company profile. Accepts an existing job description (URL, Google Doc, Notion page, file path, or pasted text) and extracts what it can; falls back to a stakeholder-style interview only when no JD is provided. Drafts the listing in the Tickets voice and submits it to the Tickets backend.
 ---
 
 # Post on Tickets
@@ -17,6 +17,14 @@ Every POST needs a bearer token. Resolve in order:
 
 If you don't have a token, finish the interview + drafting, save the payload locally, and tell the employer to email the maintainers for a token to submit it.
 
+## First-time posters
+
+If this is the employer's first listing (new company slug, or they say so), tell them upfront:
+
+> First-time posts are reviewed before they go live. A review agent checks the submission immediately — most legit listings publish in seconds. If anything looks off, it's escalated to the Tickets team for human review (typically within one business day). Subsequent posts from your company publish instantly with no review.
+
+Submit as normal. The backend response includes the review verdict.
+
 ## Tickets's voice
 
 Read this before the interview. Re-read before finalizing.
@@ -29,9 +37,30 @@ Read this before the interview. Re-read before finalizing.
 
 If a draft sounds like a press release, rewrite it. If it sounds like someone explaining their thinking over coffee, keep it.
 
-## The interview
+## Start here: ask for a JD
 
-Run as a conversation, 1–3 questions at a time.
+Open with one question, not a questionnaire:
+
+> Do you have a job description already — a Google Doc, Notion page, GitHub README, public URL, raw paste, or a file path? If so, share it and I'll work from that. If not, no problem — I'll ask you a few questions instead.
+
+Handle whatever they give you:
+
+- **Public URL** (Notion public, Google Doc with link sharing, GitHub README, company careers page, public Linear ticket) → use `WebFetch` to pull the content.
+- **Local file path** → use `Read`.
+- **Pasted text** → use it as-is.
+- **Private / gated link** → ask them to paste the contents, or export to markdown and share.
+- **No JD** → fall back to the interview below.
+
+Once you have a JD, extract everything you can and **only ask for what's missing**. Show the employer what you extracted so they can correct it before you continue. The fields you need:
+
+- Project description, stack, hard part, hours, rate, prior context, discipline, stakeholder (name + LinkedIn + email), first-week deliverables, open vs coming-soon.
+- Company name, website, one-line description, trust signals, how they work, location + remote policy.
+
+If the JD is well-written, this should be one or two follow-up questions, not ten.
+
+## Fallback: the interview
+
+Only run this if there's no JD. Conversation, 1–3 questions at a time.
 
 ### About the role
 
@@ -164,13 +193,21 @@ curl -X POST https://tickets-backend-three.vercel.app/api/listings \
   -d @payload.json
 ```
 
-Returns `{ ok: true, id, status, url }`. The `url` is null unless `status` is `open` or `filled`.
+Returns `{ ok: true, id, status, review, url }`.
+
+- `status` is the listing's current status. For first-time posters it may be `pending_review` if the agent escalated.
+- `review` is `{ verdict: "approved" | "rejected", reason }` for first-time posters, otherwise `null`.
+- `url` is the live GitHub URL when `status` is `open` or `filled`; otherwise `null`.
+
+If the agent rejects a first-time post, the Tickets team is automatically emailed at `accounts@workflow.design` with the listing and the agent's reason — they'll follow up directly.
 
 ## Close
 
 Tell the employer:
 
-- The listing is live at the returned `url` (if open).
+- If first-time and `review.verdict === "approved"`: live at the returned `url` (if status is open).
+- If first-time and `review.verdict === "rejected"`: in the manual-review queue. The Tickets team has been emailed with the agent's reason and will follow up within one business day. The returned `url` will 404 until then. Share the reason with the employer so they can fix obvious issues (missing rate, vague scope, etc.) and resubmit.
+- If a returning company: the listing is live at the returned `url` (if open).
 - To update fields later: run this skill again with the same `company.slug` + role `slug` — POST is upsert.
 - To pause/close: run again with `status: paused` or `status: closed`. The markdown file is removed from the public repo automatically.
 - New applications land in the Tickets Linear board they already manage.

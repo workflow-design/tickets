@@ -20,7 +20,6 @@ The hard part: matching the Figma design pixel-perfect — type scale, spacing, 
 
 - Greenfield Astro work with a clean Figma source and one decisive stakeholder.
 - Anything you ship is publicly visible and credit-able.
-- _TODO — anything else?_
 
 ## What we're looking for
 
@@ -30,7 +29,7 @@ The hard part: matching the Figma design pixel-perfect — type scale, spacing, 
 
 ## First ticket
 
-_TODO — typical first deliverable (e.g. "hero + nav, deployed to a preview URL, signed off against the Figma frame")._
+Hero + nav, deployed to a preview URL, signed off against the Figma frame.
 
 ## How to apply
 

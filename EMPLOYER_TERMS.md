@@ -1,5 +1,7 @@
 # Employer Terms
 
+**Heads up:** Tickets is provided as-is. We accept no liability for your use of it — including any candidate you engage with, any hire you make, or any outcome that follows.
+
 Tickets is a community list of fractional engineering and design projects. By submitting a project — whether by pull request, email, or any other channel — you agree to these terms.
 
 ## 1. What we do

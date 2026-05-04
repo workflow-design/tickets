@@ -20,17 +20,16 @@ The hard part: tutorial UX that helps without nagging. Users hate "tour" overlay
 
 - A feature with a measurable outcome (activation rate, time-to-aha).
 - End-to-end ownership across product / design / frontend.
-- _TODO — anything else?_
 
 ## What we're looking for
 
 - Has shipped an in-app tutorial / onboarding overlay that actually moved a metric.
-- _TODO — frontend stack the app is built on._
+- Comfortable in Next.js 16 + React 19 + Tailwind 4 (the `apps/web` stack).
 - Strong instinct for "show, don't tell" UX patterns. Can name three tutorial libraries / approaches and the trade-offs.
 
 ## First ticket
 
-_TODO — first deliverable. (e.g. "Tutorial flow for the single most-important mechanic, behind a feature flag, with activation-rate instrumentation.")_
+Tutorial flow for the single most-important mechanic, behind a feature flag, with activation-rate instrumentation.
 
 ## How to apply
 

@@ -22,18 +22,17 @@ The second hard part: trust. The user is sending us their working artifacts. The
 
 - Greenfield AI-tooling work with an opinionated contract to design.
 - Surface area that's directly visible to power users — public credit if shipped well.
-- _TODO — anything else?_
 
 ## What we're looking for
 
 - Has shipped at least one Claude skill, MCP server, or comparable agent integration that real users used.
 - Comfortable with the Anthropic SDK and the MCP spec.
-- _TODO — backend stack the Versey app uses._
+- Comfortable in the Versey stack: TypeScript + Next.js 16 API routes (`apps/web`).
 - Strong instinct for API contract design. Can name three "we got the contract wrong and regretted it" stories from past work.
 
 ## First ticket
 
-_TODO — first deliverable. (e.g. "Skill prototype that bundles a defined working artifact and POSTs to a sandbox endpoint, with an end-to-end demo.")_
+Skill (or MCP tool) prototype that bundles a defined working artifact, POSTs to a sandbox Versey endpoint, and shows the result in-app — end-to-end demo, behind a feature flag.
 
 ## How to apply
 
