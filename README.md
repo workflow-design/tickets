@@ -2,7 +2,13 @@
 
 Fractional product, engineering and design projects at SF rates.
 
-**[One-click install with Claude](https://claude.new?q=install+the+skills+from+here+https%3A%2F%2Fgithub.com%2Fworkflow-design%2Ftickets)**
+**[One-click install with Claude](https://claude.ai/new?q=install+the+skills+from+here+https%3A%2F%2Fgithub.com%2Fworkflow-design%2Ftickets)**
+
+For Claude Code, paste this:
+
+```
+install the skills from this repo https://github.com/workflow-design/tickets
+```
 
 Rates verified against [levels.fyi](https://www.levels.fyi). No platform fees, no recruiters. Email alerts when a project matches your stack.
 
