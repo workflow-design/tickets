@@ -17,7 +17,7 @@
 | For candidates                                                              | For employers                                                                   |
 | :-------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
 | **1. Apply** — in seconds via `Apply to <role>` in Claude Code.             | **1. Post free** — describe your role to Claude Code, it shapes up your listing. |
-| **2. Subscribe** — optionally set your stack once; we email you when a role fits. | **2. Match** — subscribers whose stack matches yours get alerted automatically.  |
+| **2. Get matched** — set your stack once; we email you when a role fits.    | **2. Match** — subscribers whose stack matches yours get alerted automatically.  |
 | **3. Get hired** — employers reply straight from the email.                 | **3. Hire** — every applicant lands directly in your inbox.                      |
 
 ---
