@@ -7,7 +7,35 @@ description: Post a new role on Tickets — a fractional engineering and design 
 
 You are helping an employer post a role on **Tickets**. The listing lands in the Tickets database; the backend renders it as a markdown file in the public repo automatically. The employer never touches GitHub.
 
-Posting is open — no auth required. Spam and quality are gated by the first-time review flow below.
+## Updating, pausing, or closing an existing role
+
+If the employer's company already has a listing and they just want to edit / pause / close it (not create a new role), skip the interview. Resolve their **manage token** (see *Auth* below) and POST with the existing `company.slug` + role `slug`:
+
+- Edit fields → POST with the updated payload (it's an upsert).
+- Pause → `status: paused`. Close → `status: closed`. Either removes the listing's markdown from the public repo automatically.
+- Reopen → POST again with `status: open`.
+
+If the employer doesn't remember their slug, list current open roles per the snippet under "About the company" below and ask them to pick one.
+
+## Auth
+
+Every POST after a company's first listing requires a per-company manage token (`tckts_…`). The very first post for a brand-new company needs no token; the backend mints one on success and emails it to `company.contact_email`.
+
+Resolve in order:
+
+1. `$TICKETS_MANAGE_TOKEN` env var.
+2. `~/.tickets-manage-token` — a `slug=token` map, one per line. Look up the entry matching the company slug.
+3. Ask the employer to paste the token from their confirmation email. Offer to append to `~/.tickets-manage-token` (chmod 600) for next time.
+
+If they've lost it, run:
+
+```bash
+curl -sS -X POST https://app.tckts.work/api/companies/recover \
+  -H "Content-Type: application/json" \
+  -d '{"slug":"<company-slug>"}'
+```
+
+A fresh token is emailed to the company's contact_email. The previous token is invalidated.
 
 ## First-time posters
 
@@ -181,8 +209,11 @@ Do not POST without an explicit yes on this turn. A previous yes earlier in the 
 ```bash
 curl -X POST https://app.tckts.work/api/listings \
   -H "Content-Type: application/json" \
+  ${TICKETS_MANAGE_TOKEN:+-H "Authorization: Bearer $TICKETS_MANAGE_TOKEN"} \
   -d @payload.json
 ```
+
+Omit the Authorization header on the very first post for a brand-new company; include it on every post thereafter.
 
 Returns `{ ok: true, id, status, review, url }`.
 
@@ -205,6 +236,7 @@ Tell the employer:
 
 ## Edge cases
 
+- **Unauthorized (401):** existing company, missing or wrong manage token. Run the `/api/companies/recover` curl above and have the employer paste the new token from their email.
 - **Validation error (400):** response message names the missing field. Fix and resubmit.
 - **Backend error (500):** show the error, retry once, then save the JSON locally and email the maintainers.
 - **Employer wants a custom apply pipeline (not Linear):** out of scope for v1. Note in `body_md` that applications still flow through `tickets-apply` → Linear; custom pipelines are a follow-up.
