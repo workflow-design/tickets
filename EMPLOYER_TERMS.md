@@ -1,4 +1,4 @@
-# Employer Terms
+# Ground Rules for Employers
 
 **Heads up:** Tickets is provided as-is. We accept no liability for your use of it — including any candidate you engage with, any hire you make, or any outcome that follows.
 

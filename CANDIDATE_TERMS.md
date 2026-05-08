@@ -1,4 +1,4 @@
-# Candidate Terms
+# Ground Rules for Candidates
 
 **Heads up:** Tickets is provided as-is. We accept no liability for your use of it — including any role you apply to, any employer you engage with, or any outcome that follows.
 
