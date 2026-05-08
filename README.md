@@ -101,7 +101,7 @@ curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills
 
 ## About
 
-Built by the ex-founders of [Rota](https://rota.com) — one of the UK's largest on-demand temporary staffing platforms, running ~3,000 placements a week. Tickets is what we'd build for the AI-fluent end of that market: smaller, sharper, no recruiters, candidates and employers both meeting through Claude.
+Built by the ex-founders of [Rota](https://rota.com) — one of the UK's largest on-demand temporary staffing platforms, running ~3,000 placements a week. Tickets is what we'd build for the AI-fluent end of that market: smaller, faster, more agenty.
 
 ---
 
