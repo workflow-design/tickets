@@ -1,4 +1,4 @@
-# Automate Versey's Hiring Backend + Outreach
+# Automate Tickets' Hiring Backend + Outreach
 
 **Company:** [Tickets](../companies/tickets.md)
 
@@ -20,7 +20,7 @@ You'd own the two pieces around it:
 
 **2. Outreach engine.** Source candidates from X, LinkedIn, GitHub, Reddit, HN. Score against open Linear tickets. Send first-touch messages that don't read like recruiter slop. Parse replies, route warm ones into the funnel, drop cold ones cleanly. The eval loop is the work, not a side quest.
 
-Versey is **not** asking you to rebuild the candidate side or the platform.
+Tickets is **not** asking you to rebuild the candidate side or the platform.
 
 ## The hard part
 
@@ -76,7 +76,7 @@ curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills
 Then in Claude:
 
 ```
-Apply to versey-hiring-platform on Tickets
+Apply to tickets-hiring-platform on Tickets
 ```
 
 ## How to apply
