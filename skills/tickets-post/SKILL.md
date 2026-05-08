@@ -65,7 +65,7 @@ Open with one question, not a questionnaire:
 
 Handle whatever they give you:
 
-- **Public URL** (Notion public, Google Doc with link sharing, GitHub README, company careers page, public Linear ticket) → use `WebFetch` to pull the content.
+- **Public URL** (Notion public, Google Doc with link sharing, GitHub README, company careers page) → use `WebFetch` to pull the content.
 - **Local file path** → use `Read`.
 - **Pasted text** → use it as-is.
 - **Private / gated link** → ask them to paste the contents, or export to markdown and share.
@@ -232,11 +232,44 @@ Tell the employer:
 - If a returning company: the listing is live at the returned `url` (if open).
 - To update fields later: run this skill again with the same `company.slug` + role `slug` — POST is upsert.
 - To pause/close: run again with `status: paused` or `status: closed`. The markdown file is removed from the public repo automatically.
-- New applications land in the Tickets Linear board they already manage.
+- New applications are emailed to the contact on file as they come in.
+
+## "What happens now?" — explainer
+
+If the employer asks what happens after posting, walk them through this. Tailor — don't dump it on them unprompted.
+
+**Where applications go**
+
+- Every application lands in the Tickets database and creates an issue in the Linear project linked to this listing — that's the system of record for triage.
+- A notification email also goes to the company `contact_email` for every application: candidate name, email, links, pitch, and the Linear issue URL. Watch that inbox or the Linear board.
+
+**Visibility**
+
+- The listing renders as a markdown file in the public `workflow-design/tickets` repo (the `url` returned by POST). The README index updates automatically.
+- Subscribers whose `tickets-subscribe` profile matches the discipline + stack get an email alert.
+
+**Editing, pausing, closing**
+
+- Edit any field → re-run this skill with the same `company.slug` + role `slug` and the manage token. POST is upsert.
+- Pause (`status: paused`) or close (`status: closed`) → the markdown file is removed from the public repo automatically and the linked Linear project is archived. Reopen by POSTing again with `status: open`.
+- The manage token is per-company — one token covers all roles under that company.
+
+**If they lose the manage token**
+
+- POST `/api/companies/recover` with `{"slug":"<company-slug>"}`. A fresh token is emailed to the company `contact_email`; the old one is invalidated. Rate-limited to one rotation per 5 minutes.
+
+**First-time review**
+
+- If this was their first listing and the agent escalated, the role sits in `pending_review`. The Tickets team has been emailed and will follow up within one business day. Once approved, the listing publishes at the requested status and the existing `url` becomes live.
+
+**What we don't do (yet)**
+
+- No web dashboard — everything is via this skill or the API. Linear is the candidate triage UI.
+- Custom apply pipelines (Greenhouse, Lever, etc.) aren't supported in v1.
 
 ## Edge cases
 
 - **Unauthorized (401):** existing company, missing or wrong manage token. Run the `/api/companies/recover` curl above and have the employer paste the new token from their email.
 - **Validation error (400):** response message names the missing field. Fix and resubmit.
 - **Backend error (500):** show the error, retry once, then save the JSON locally and email the maintainers.
-- **Employer wants a custom apply pipeline (not Linear):** out of scope for v1. Note in `body_md` that applications still flow through `tickets-apply` → Linear; custom pipelines are a follow-up.
+- **Employer wants a custom apply pipeline:** out of scope for v1. Note in `body_md` that applications flow through `tickets-apply` and are emailed to the contact on file; custom pipelines are a follow-up.
