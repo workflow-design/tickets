@@ -1,6 +1,6 @@
 <div align="center">
 
-# Will's Tickets
+# Tickets
 
 **Fractional product, engineering, AI and design projects at SF rates.**
 
