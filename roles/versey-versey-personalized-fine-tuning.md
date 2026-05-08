@@ -12,8 +12,11 @@
 Wire up per-user fine-tuning on Versey: users drop in reference files, we fine-tune a small model on Fireworks so the app can write in their voice. Evals via Braintrust. The hard part is keeping cost and performance observable as concurrent fine-tunes scale.
 
 **Stakeholder:** [Will Taylor, CEO](https://www.linkedin.com/in/wrftaylor/)
+
 **Minimum earning per ticket:** $2.5k (~2 days at the stated rate)
+
 **Rate verified:** levels.fyi · Software Engineer · SF Bay Area · P50 · fetched 2026-05-08 · https://www.levels.fyi/t/software-engineer/locations/san-francisco-bay-area
+
 **Estimated hours:** ~3–4 days
 
 ## What you'd build
