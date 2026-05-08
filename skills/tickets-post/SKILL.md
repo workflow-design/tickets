@@ -69,7 +69,7 @@ Handle whatever they give you:
 
 Once you have a JD, extract everything you can and **only ask for what's missing**. Show the employer what you extracted so they can correct it before you continue. The fields you need:
 
-- Project description, stack, hard part, hours, rate, prior context, discipline, stakeholder (name + LinkedIn + email), first-week deliverables, open vs coming-soon.
+- Project description, stack, hard part, hours, rate, prior context, discipline, stakeholder (name + LinkedIn shown publicly on the listing; email kept private and used only for application notifications + the manage token), first-week deliverables, open vs coming-soon.
 - Company name, website, one-line description, trust signals, how they work, location + remote policy.
 
 If the JD is well-written, this should be one or two follow-up questions, not ten.
@@ -87,7 +87,7 @@ Only run this if there's no JD. Conversation, 1–3 questions at a time.
 5. **What's the rate, or contract shape?** Default for fractional eng/design is $150–200/hr. Also collect minimum earning per ticket (default ~2 days at the rate, e.g. $2.5k).
 6. **Does anything already exist?** Brief, Figma, repo, prior context.
 7. **What's the discipline?** One of: `Engineering`, `Design`, `Product`. Stored as `discipline`; the matching system uses this.
-8. **Who's the stakeholder?** Name + LinkedIn. Person the contractor reports to.
+8. **Who's the stakeholder?** Name + LinkedIn — shown publicly on the listing so candidates know who they'd be working with. Person the contractor reports to.
 9. **What does the first week look like?** Concrete deliverables.
 10. **Is this open today or coming soon?** → `status: open` or `status: draft`.
 
@@ -106,7 +106,7 @@ If their slug is in there, skip. Otherwise:
 2. **Trust signals.** Years active, projects shipped, ratings, notable clients/customers, funding (if relevant).
 3. **How they work.** Async/sync, brief-driven, meeting cadence.
 4. **Where they're based + remote policy.**
-5. **Stakeholder contact email.**
+5. **Stakeholder contact email.** Not shown on the listing — used only to deliver application notifications and the company's manage token.
 6. **Website.**
 
 ## Rate verification (do this *before* drafting body_md)
