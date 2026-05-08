@@ -225,23 +225,31 @@ If the agent rejects a first-time post, the Tickets team is automatically emaile
 
 ## Close
 
-Tell the employer:
+After a successful POST, **always tell the employer what happens next.** Pick the right opener for the response state, then add the standard "what's next" paragraph below.
 
-- If first-time and `review.verdict === "approved"`: live at the returned `url` (if status is open).
-- If first-time and `review.verdict === "rejected"`: in the manual-review queue. The Tickets team has been emailed with the agent's reason and will follow up within one business day. The returned `url` will 404 until then. Share the reason with the employer so they can fix obvious issues (missing rate, vague scope, etc.) and resubmit.
-- If a returning company: the listing is live at the returned `url` (if open).
-- To update fields later: run this skill again with the same `company.slug` + role `slug` — POST is upsert.
-- To pause/close: run again with `status: paused` or `status: closed`. The markdown file is removed from the public repo automatically.
-- New applications are emailed to the contact on file as they come in.
+**Opener (depends on response):**
 
-## "What happens now?" — explainer
+- First-time, `review.verdict === "approved"` → "Your listing is live at <url>."
+- First-time, `review.verdict === "rejected"` → "Your listing is in the manual-review queue. The Tickets team has been emailed with the agent's reason — *<reason>* — and will follow up within one business day. The public URL will 404 until then. If the reason names something fixable (missing rate, vague scope), happy to revise and resubmit now."
+- Returning company → "Your listing is live at <url>."
 
-If the employer asks what happens after posting, walk them through this. Tailor — don't dump it on them unprompted.
+**Then say (every time):**
+
+> What happens next:
+> - We'll email **<contact_email>** every time a candidate applies — name, links, pitch — so you can reply directly.
+> - Subscribers whose stack matches will get an alert about this role.
+> - To edit, pause, or close it later, just ask me — I'll need the manage token from your confirmation email (or `~/.tickets-manage-token`). Pausing or closing pulls the listing from the public repo.
+> - Lost the token? POST `/api/companies/recover` with your slug and a fresh one is emailed to <contact_email>.
+
+If they ask for more detail, walk through the "What happens now?" explainer below.
+
+## "What happens now?" — deeper explainer
+
+Use this when the employer asks for more detail than the close paragraph above. Tailor — don't dump it on them unprompted.
 
 **Where applications go**
 
-- Every application lands in the Tickets database and creates an issue in the Linear project linked to this listing — that's the system of record for triage.
-- A notification email also goes to the company `contact_email` for every application: candidate name, email, links, pitch, and the Linear issue URL. Watch that inbox or the Linear board.
+- For every new application, an email is sent to the company `contact_email` with the candidate's name, email, links, and pitch. Reply directly to the candidate from there.
 
 **Visibility**
 
@@ -251,7 +259,7 @@ If the employer asks what happens after posting, walk them through this. Tailor 
 **Editing, pausing, closing**
 
 - Edit any field → re-run this skill with the same `company.slug` + role `slug` and the manage token. POST is upsert.
-- Pause (`status: paused`) or close (`status: closed`) → the markdown file is removed from the public repo automatically and the linked Linear project is archived. Reopen by POSTing again with `status: open`.
+- Pause (`status: paused`) or close (`status: closed`) → the markdown file is removed from the public repo automatically. Reopen by POSTing again with `status: open`.
 - The manage token is per-company — one token covers all roles under that company.
 
 **If they lose the manage token**
@@ -264,7 +272,7 @@ If the employer asks what happens after posting, walk them through this. Tailor 
 
 **What we don't do (yet)**
 
-- No web dashboard — everything is via this skill or the API. Linear is the candidate triage UI.
+- No web dashboard — everything is via this skill or the API. Triage applications from the notification emails sent to the company `contact_email`.
 - Custom apply pipelines (Greenhouse, Lever, etc.) aren't supported in v1.
 
 ## Edge cases
