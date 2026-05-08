@@ -36,7 +36,7 @@
 | [Build Interactive Tutorials for the Versey App](./roles/versey-interactive-tutorials.md) | Versey | Design — Product + Design + Frontend | $150–225/hr (L4 → L5 band) |
 | ~~[Build the Versey Homepage in Astro from a Figma Design](./roles/versey-homepage-astro.md)~~ — _taken_ | ~~Versey~~ | ~~Engineering — Frontend Engineering~~ | ~~$100–175/hr (L3 → L4 band)~~ |
 | [Add Conversion Animations to the Versey Homepage](./roles/versey-homepage-animations.md) | Versey | Design — Design + Frontend | $150–225/hr (L4 → L5 band) |
-| [Automate Versey's Hiring Backend + Outreach](./roles/tickets-hiring-platform.md) | Tickets | Engineering — Fractional AI Engineering · ongoing, ~10–20 hrs/week | $200–400/hr (L5 → L6 band) |
+| [Automate Tickets' Hiring Backend + Outreach](./roles/tickets-hiring-platform.md) | Tickets | Engineering — Fractional AI Engineering · ongoing, ~10–20 hrs/week | $200–400/hr (L5 → L6 band) |
 | [Build a Creators Use-Case Sub-Page on Versey.ai](./roles/versey-creators-page.md) | Versey | Design — Frontend + Copy + Design | $150–225/hr (L4 → L5 band) |
 | [Build the Claude → Versey Handoff Feature](./roles/versey-claude-handoff.md) | Versey | Product — Backend + Product Engineering | $200–400/hr (L5 → L6 band, AI integration premium) |
 
