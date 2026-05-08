@@ -1,6 +1,6 @@
-# Tao of Fractional
+# Why & How To Make The Most Of Fractional Talent
 
-The traditional hiring model was designed for world of life-long careers & labour-intensive companies.
+The traditional hiring model was designed for labour-intensive companies.
 
 As companies shrink, the demand for full-time staff has decreased and the risks of immediately jumping into full-time employment are higher. Each new hire is now a greater fraction of the company's culture.
 
@@ -36,6 +36,9 @@ Playbook: run an initial 2 - 5 day project; if a mutual fit, make offer.
 
 Fractional workstreams and project bets can convert to full-time hires - several of our best long-term hires have worked this way. Be transparent about your intentions up front so they can be transparent about theirs.
 
-### Further reading
+## Further reading
 
-- Thinking in Bets by Annie Duke
+- [Thinking in Bets by Annie Duke](https://www.amazon.co.uk/Thinking-Bets-Making-Smarter-Decisions/dp/0735216355)
+- [How We Hire At Linear](https://linear.app/now/how-we-hire-at-linear)
+
+Happy building!
