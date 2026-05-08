@@ -42,7 +42,7 @@
 
 <!-- TICKETS_OPEN_ROLES_END -->
 
-By applying you agree to the [Candidate Terms](./CANDIDATE_TERMS.md); by posting you agree to the [Employer Terms](./EMPLOYER_TERMS.md).
+_Both sides sign up to a short set of ground rules — [for candidates](./CANDIDATE_TERMS.md), [for employers](./EMPLOYER_TERMS.md)._
 
 ---
 
