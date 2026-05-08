@@ -16,7 +16,7 @@
 
 | For candidates                                                            | For employers                                                                                        |
 | :------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------- |
-| **1. Subscribe** — set your stack, disciplines, and rate floor in Claude. | **1. Post — free, no recruiter fees.** Walk through `tickets-post` in Claude; first-time posts are auto-reviewed for quality. |
+| **1. Subscribe** — set your stack, disciplines, and rate floor in Claude. | **1. Post — free, no recruiter fees.** Walk through `tickets-post` in Claude. |
 | **2. Match** — get an email the moment a role fits your profile.          | **2. Match** — subscribers whose stack matches yours get alerted automatically.                      |
 | **3. Apply** — one line in Claude submits a tailored application.         | **3. Hire** — every applicant lands directly in your inbox.                                          |
 
