@@ -26,7 +26,7 @@
 
 <!-- TICKETS_OPEN_ROLES_START -->
 
-**9 open roles** · last synced 2026-05-08
+**8 open roles** · last synced 2026-05-08
 
 | Role | Company | Type | Hourly rate |
 | --- | --- | --- | --- |
@@ -39,7 +39,6 @@
 | [Automate Versey's Hiring Backend + Outreach](./roles/tickets-hiring-platform.md) | Tickets | Engineering — Fractional AI Engineering · ongoing, ~10–20 hrs/week | $200–400/hr (L5 → L6 band) |
 | [Build a Creators Use-Case Sub-Page on Versey.ai](./roles/versey-creators-page.md) | Versey | Design — Frontend + Copy + Design | $150–225/hr (L4 → L5 band) |
 | [Build the Claude → Versey Handoff Feature](./roles/versey-claude-handoff.md) | Versey | Product — Backend + Product Engineering | $200–400/hr (L5 → L6 band, AI integration premium) |
-| [Ship Bring-Your-Own API Keys for the Versey App](./roles/versey-byok-api-keys.md) | Versey | Engineering — Backend Engineering (light frontend) | $150–250/hr (L4 → L5 band) |
 
 <!-- TICKETS_OPEN_ROLES_END -->
 
