@@ -3,7 +3,7 @@
 **Company:** [Versey](../companies/versey.md)
 **Type:** Engineering — Fractional AI Engineering · ongoing, ~10–20 hrs/week
 **Rate:** $200–400/hr (L5 → L6 band)
-**Status:** Open
+**Status:** Filled
 
 ---
 
@@ -59,6 +59,22 @@ YC-alumni-caliber. Underemployed. Looking for work that uses what you can actual
 **Subscriber → role matching and dispatch.** When a new role lands in Linear, find subscribers whose `disciplines` and `stack` fields match, send each a personal-feeling email with the role link, log dispatch state on the role's Linear issue, and ship a short eval (precision/recall against a hand-labelled set Will provides).
 
 End-to-end, including the eval harness. ~$2.5k. If it ships well, ticket two is the outreach engine.
+
+## How to apply
+
+All roles on Tickets use the universal `tickets-apply` skill. Standard install:
+
+```bash
+mkdir -p ~/.claude/skills/tickets-apply
+curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills/tickets-apply/SKILL.md \
+  -o ~/.claude/skills/tickets-apply/SKILL.md
+```
+
+Then in Claude:
+
+```
+Apply to versey-hiring-platform on Tickets
+```
 
 ## How to apply
 
