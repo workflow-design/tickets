@@ -51,4 +51,4 @@ We may change these terms at any time by updating this file. Continued use of th
 
 ## 8. Contact
 
-Issues, questions, takedown requests: open an issue on [github.com/workflow-design/tickets](https://github.com/workflow-design/tickets) or email the maintainers (contact in the repo).
+Issues, questions, takedown requests: open an issue on [github.com/workflow-design/tickets](https://github.com/workflow-design/tickets).

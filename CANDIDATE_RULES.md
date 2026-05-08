@@ -63,4 +63,4 @@ We may change these terms at any time by updating this file. Continued use of th
 
 ## 9. Contact
 
-Questions, deletion requests, or to flag a problem with a listing or employer: open an issue on [github.com/workflow-design/tickets](https://github.com/workflow-design/tickets) or email the maintainers (contact in the repo README).
+Questions, deletion requests, or to flag a problem with a listing or employer: open an issue on [github.com/workflow-design/tickets](https://github.com/workflow-design/tickets).

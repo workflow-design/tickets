@@ -42,7 +42,7 @@
 
 <!-- TICKETS_OPEN_ROLES_END -->
 
-_By using Tickets, you agree to our basic-common-decency ground rules — [for candidates](./CANDIDATE_TERMS.md), [for employers](./EMPLOYER_TERMS.md)._
+_By using Tickets, you agree to our basic-common-decency ground rules — [for candidates](./CANDIDATE_RULES.md), [for employers](./EMPLOYER_RULES.md)._
 
 ---
 
