@@ -82,4 +82,4 @@ Then in Claude: `Post a role on Tickets`
 
 ## License
 
-MIT. Fork it, learn from it, run your own list.
+MIT. Fork it, run your own list.
