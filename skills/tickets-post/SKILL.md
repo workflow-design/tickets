@@ -151,10 +151,15 @@ If no comparable, use the closest, disclose it on the listing.
 
 Use this `body_md` shape:
 
+Each `**Field:**` line in the intro block must be separated by a blank line, otherwise GitHub renders them as one merged paragraph:
+
 ```markdown
 **Stakeholder:** [Name, title](https://linkedin.com/...)
+
 **Minimum earning per ticket:** $2.5k (~2 days at the stated rate)
+
 **Rate verified:** levels.fyi · <discipline> · SF Bay Area · P50 · fetched YYYY-MM-DD · [url]
+
 **Estimated hours:** <range>
 
 ## What you'd build

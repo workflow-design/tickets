@@ -2,13 +2,13 @@
 
 Fractional product, engineering, AI and design projects at SF rates.
 
+Rates verified against [levels.fyi](https://www.levels.fyi). No platform fees, no recruiters. Email alerts when a project matches your stack.
+
 In Claude Code, paste:
 
 ```
 install the skills from this repo https://github.com/workflow-design/tickets
 ```
-
-Rates verified against [levels.fyi](https://www.levels.fyi). No platform fees, no recruiters. Email alerts when a project matches your stack.
 
 💼 Got a project? Post for free.
 
@@ -18,15 +18,17 @@ Install the skills and ask Claude to post. See also our [Hiring Philosophy](./gu
 
 ## Open Roles
 
-| Role                                                                                        | Company                         | Type                       | Hourly rate | Status      |
-| ------------------------------------------------------------------------------------------- | ------------------------------- | -------------------------- | ----------- | ----------- |
-| [Automate Versey's Hiring Backend + Outreach](./roles/versey-hiring-platform.md)            | [Versey](./companies/versey.md) | Applied AI Engineering     | $200–400/hr | Open        |
-| [Build the Claude → Versey Handoff Feature](./roles/versey-claude-handoff.md)               | [Versey](./companies/versey.md) | Product Engineering        | $200–400/hr | Open        |
-| [Build Interactive Tutorials for the Versey App](./roles/versey-interactive-tutorials.md)   | [Versey](./companies/versey.md) | Product + Design + FE      | $150–225/hr | Open        |
-| [Build a Newsletter-Writer Use-Case Sub-Page on Versey.ai](./roles/versey-creators-page.md) | [Versey](./companies/versey.md) | Copy + Design + FE         | $150–225/hr | Open        |
-| [Build the Versey Homepage in Astro from a Figma Design](./roles/versey-homepage-astro.md)  | [Versey](./companies/versey.md) | Frontend Engineering       | $100–175/hr | Open        |
-| [Design and Build Versey's New Onboarding Flow](./roles/versey-onboarding-flow.md)          | [Versey](./companies/versey.md) | Product + Design + Eng     | $200–375/hr | Coming soon |
-| [Add Conversion Animations to the Versey Homepage](./roles/versey-homepage-animations.md)   | [Versey](./companies/versey.md) | Design + Frontend (motion) | $150–225/hr | Coming soon |
+<!-- TICKETS_OPEN_ROLES_START -->
+
+| Role                                                                                        | Company                         | Type                       | Hourly rate |
+| ------------------------------------------------------------------------------------------- | ------------------------------- | -------------------------- | ----------- |
+| [Automate Versey's Hiring Backend + Outreach](./roles/versey-hiring-platform.md)            | [Versey](./companies/versey.md) | Applied AI Engineering     | $200–400/hr |
+| [Build the Claude → Versey Handoff Feature](./roles/versey-claude-handoff.md)               | [Versey](./companies/versey.md) | Product Engineering        | $200–400/hr |
+| [Build Interactive Tutorials for the Versey App](./roles/versey-interactive-tutorials.md)   | [Versey](./companies/versey.md) | Product + Design + FE      | $150–225/hr |
+| [Build a Newsletter-Writer Use-Case Sub-Page on Versey.ai](./roles/versey-creators-page.md) | [Versey](./companies/versey.md) | Copy + Design + FE         | $150–225/hr |
+| [Build the Versey Homepage in Astro from a Figma Design](./roles/versey-homepage-astro.md)  | [Versey](./companies/versey.md) | Frontend Engineering       | $100–175/hr |
+
+<!-- TICKETS_OPEN_ROLES_END -->
 
 By applying you agree to the [Candidate Terms](./CANDIDATE_TERMS.md); by posting you agree to the [Employer Terms](./EMPLOYER_TERMS.md).
 
