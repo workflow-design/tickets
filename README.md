@@ -26,11 +26,10 @@
 
 <!-- TICKETS_OPEN_ROLES_START -->
 
-**11 open roles** · last synced 2026-05-08
+**10 open roles** · last synced 2026-05-08
 
 | Role | Company | Type | Hourly rate |
 | --- | --- | --- | --- |
-| [Build Beacon Forge's Usage-Event Ingestion Pipeline](./roles/beacon-forge-usage-events-pipeline.md) | Beacon Forge | Engineering — Fractional, ~80–120 hrs over 6 weeks | $200–275/hr (L5 band) |
 | [Set Up Personalized Fine-Tuning on Versey](./roles/versey-versey-personalized-fine-tuning.md) | Versey | Engineering — Fractional, ~3–4 days | $175–225/hr |
 | [Set Up the Versey Slack Community + Automations](./roles/versey-slack-community.md) | Versey | Engineering — Operations / Community Engineering | $100–150/hr (L3 → L4 band) |
 | [Design and Build Versey's New Onboarding Flow](./roles/versey-onboarding-flow.md) | Versey | Design — Product + Design + Engineering | $200–375/hr (L5 → L6 band, full-stack product premium) |
