@@ -24,7 +24,7 @@ By posting a role, you agree to:
 
 - **Be honest.** Describe the work, the rate, and the time commitment accurately. Don't bait-and-switch.
 - **Pay on time.** If you agreed to pay for work, pay for it on the agreed schedule.
-- **Respect candidates' time.** Respond to applicants you intend to hire within a reasonable window. Decline candidates promptly when you decide not to proceed.
+- **Respect candidates' time.** Respond to applicants you intend to hire within a reasonable window. Inform candidates you have interviewed promptly if you decide not to proceed.
 - **Comply with applicable law** in your jurisdiction and the candidate's — including labour, tax, anti-discrimination, IP, and data protection law.
 - **Hold candidate data appropriately.** Use applicant information only to evaluate the application and to communicate about the role. Don't sell, share, or repurpose it.
 - **No illegal, fraudulent, or harmful work.** No requests that violate law, infringe third-party rights, or that a reasonable person would consider abusive.
