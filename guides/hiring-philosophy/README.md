@@ -1,44 +1,43 @@
-# Why & How To Make The Most Of Fractional Talent
+# How to Hire Fractional Talent
 
-The traditional hiring model was designed for labour-intensive companies.
+The old model of hiring assumed you needed lots of people _all the time_. You don't.
 
-As companies shrink, the demand for full-time staff has decreased and the risks of immediately jumping into full-time employment are higher. Each new hire is now a greater fraction of the company's culture.
+Companies are smaller now. Each hire is a bigger chunk of your culture, and a full-time mistake costs more than ever. Meanwhile, the best AI-native workers are 10x their peers and have nowhere to spend the productivity. Their nights and weekends are your edge.
 
-At the same time, the best AI-enabled workers are orders of magnitude more effective than their colleagues and have no means of capitalising on their productivity gain. Their free weekends and evenings are your opportunity.
+Many roles can be automated with AI eventually - but today, the right unit is a human running the AI: they handle taste, judgement, and shipping. For example, a coding agent writes the code; the human gets it to "done done."
 
-In principle most jobs can be delegated to AI. In practice the jagged edge of AI means delegating to a human overseeing the AI is still the right form-factor. For example, while coding can be handled by an agent, an over-seeing human can do all of the messy taste, judgement and "done done" parts too.
+Hiring isn't an anti-pattern for a fully queryable company, it's a feature: horizontal human scaling.
 
-Hiring humans for a fully queryable company is not an anti-pattern, it's a feature: human horizontal scaling.
+## Three playbooks
 
-## The new playbooks:
+**1. Fractional workstreams (ongoing tickets)**
 
-### Ongoing tickets (fractional worksteams)
+For: Ops (e.g. HR, finance monthly reporting), Customer-facing (Lower-value inbound sales; customer support), Engineering (eval management, specific-feature quality ownership)
 
-Examples: Ops (e.g. HR, finance monthly reporting), Customer-facing (Lower-value inbound sales; customer support), Engineering (eval management, specific-feature quality ownership)
+How: One 30-min intro. Then a paid 2–5 day trial project. If \~30% of candidates clear the bar, you're calibrated. Fewer means you're not screening hard enough.
 
-Playbook: One 30 min initial meeting, then run an initial 2 - 5 day project to validate performance and cultural fit. Approximately 30% of candidates should meet the bar - fewer than this and you are not being selective enough pre-project.
+Once in, assign work in Slack or Linear. Give them ownership of an area, not tickets. Good fits feel effortless: relaxed timelines, real work, shared wins, fun in the DMs.
 
-Once onboarded, assign ad-hoc tickets via Slack or Linear. A good mutual fit will feel effortless and high-trust - timelines are relaxed, meaningful work is supported, wins are celebrated together, there is a sense of fun in the conversations. Assign ownership to areas and outcomes rather than ad-hoc tickets.
+Best candidates are busy with their own thing and want side income. Get VC-grade contracts signed day one — you'll need clean IP at the next raise. Pay monthly. Always.
 
-Ideal candidates will be busy with their own projects but looking for supplementary income. Ensure VC-grade contracts up front as you'll need to show your IP is secure if you raise or exit. Pay promptly (monthly) regardless of project outcome.
+**2. Project bets**
 
-### Project bets
+For: build us a CRM in Attio. Figure out and ship project X. Get us to MVP. Make mobile great.
 
-Examples: Build us a custom CRM, build X feature, build us an MVP. This keeps your team focussed on the main priorities for the quarter. Particularly important for a pre-PMF founder it allows you to focus on distribution and innovation rather than getting dragged into delivery.
+This keeps your core team on the quarter's priorities. Pre-PMF, it's how you as a founder stay focused on distribution and the core value of the product instead of getting pulled into delivery and sidequests.
 
-Playbook: Same as fractional. Ideally, select for candidates who bring in knowledge and approaches your team doesn't currently manage. Between-role candidates are fine.
+Same playbook as fractional. Bias toward people who bring skills your team lacks. Between-jobs is fine.
 
-### Trial-based hiring
+**3. Trial-based hiring**
 
-Top companies such as Linear run a real, paid project with the candidate to get better signal first. This costs more up-front but reduces mis-hires which are demotivating & distracting for everyone including the mis-hire.
+Many companies such as Linear run a real, paid project with the candidate to get better signal first. While this costs more up front, it saves you from a mis-hire, which is horrible for everyone — including the mis-hire.
 
-Playbook: run an initial 2 - 5 day project; if a mutual fit, make offer.
+Run a real, paid 2–5 day project, then offer if the fit is A+. For a more thorough template, read [How They Hire at Linear.](https://linear.app/now/how-we-hire-at-linear)
 
-Fractional workstreams and project bets can convert to full-time hires - several of our best long-term hires have worked this way. Be transparent about your intentions up front so they can be transparent about theirs.
+Fractional and project work convert to full-time. Several of our best hires came in this way. Be transparent about your intentions up front so they can be transparent about theirs.
 
 ## Further reading
 
-- [Thinking in Bets by Annie Duke](https://www.amazon.co.uk/Thinking-Bets-Making-Smarter-Decisions/dp/0735216355)
-- [How We Hire At Linear](https://linear.app/now/how-we-hire-at-linear)
+- [Thinking in Bets — Annie Duke](https://www.amazon.co.uk/Thinking-Bets-Making-Smarter-Decisions/dp/0735216355)
 
-Happy building!
+Happy building.
