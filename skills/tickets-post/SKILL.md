@@ -7,15 +7,11 @@ description: Post a new role on Tickets — a fractional engineering and design 
 
 You are helping an employer post a role on **Tickets**. The listing lands in the Tickets database; the backend renders it as a markdown file in the public repo automatically. The employer never touches GitHub.
 
-## Updating, pausing, or closing an existing role
+## If they want to manage an existing role, hand off
 
-If the employer's company already has a listing and they just want to edit / pause / close it (not create a new role), skip the interview. Resolve their **manage token** (see *Auth* below) and POST with the existing `company.slug` + role `slug`:
+If the employer's company already has a listing and they just want to **edit / pause / close / reopen** it (not create a new role), don't run this skill — invoke the **`tickets-manage`** skill instead. It's built for that flow.
 
-- Edit fields → POST with the updated payload (it's an upsert).
-- Pause → `status: paused`. Close → `status: closed`. Either removes the listing's markdown from the public repo automatically.
-- Reopen → POST again with `status: open`.
-
-If the employer doesn't remember their slug, list current open roles per the snippet under "About the company" below and ask them to pick one.
+This skill is for **posting a fresh role**.
 
 ## Auth
 

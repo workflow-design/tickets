@@ -78,6 +78,16 @@ curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills
 
 Then in Claude: `Post a role on Tickets`
 
+### `tickets-manage` — edit, pause, close, or reopen a role you posted
+
+```bash
+mkdir -p ~/.claude/skills/tickets-manage
+curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills/tickets-manage/SKILL.md \
+  -o ~/.claude/skills/tickets-manage/SKILL.md
+```
+
+Then in Claude: `Manage my Tickets roles`
+
 ---
 
 ## License
