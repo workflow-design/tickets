@@ -26,16 +26,20 @@
 
 <!-- TICKETS_OPEN_ROLES_START -->
 
-**6 open roles** · last synced 2026-05-08
+**10 open roles** · last synced 2026-05-08
 
 | Role | Company | Type | Hourly rate |
 | --- | --- | --- | --- |
-| [Set Up Personalized Fine-Tuning on Versey](./roles/versey-versey-personalized-fine-tuning.md) | [Versey](./companies/versey.md) | Engineering — Fractional, ~3–4 days | $175–225/hr |
-| [Automate Versey's Hiring Backend + Outreach](./roles/versey-hiring-platform.md) | [Versey](./companies/versey.md) | Applied AI Engineering | $200–400/hr |
-| [Build the Claude → Versey Handoff Feature](./roles/versey-claude-handoff.md) | [Versey](./companies/versey.md) | Product Engineering | $200–400/hr |
-| [Build Interactive Tutorials for the Versey App](./roles/versey-interactive-tutorials.md) | [Versey](./companies/versey.md) | Product + Design + FE | $150–225/hr |
-| [Build a Newsletter-Writer Use-Case Sub-Page on Versey.ai](./roles/versey-creators-page.md) | [Versey](./companies/versey.md) | Copy + Design + FE | $150–225/hr |
-| [Build the Versey Homepage in Astro from a Figma Design](./roles/versey-homepage-astro.md) | [Versey](./companies/versey.md) | Frontend Engineering | $100–175/hr |
+| [Set Up Personalized Fine-Tuning on Versey](./roles/versey-versey-personalized-fine-tuning.md) | Versey | Engineering — Fractional, ~3–4 days | $175–225/hr |
+| [Set Up the Versey Slack Community + Automations](./roles/versey-slack-community.md) | Versey | Engineering — Operations / Community Engineering | $100–150/hr (L3 → L4 band) |
+| [Design and Build Versey's New Onboarding Flow](./roles/versey-onboarding-flow.md) | Versey | Design — Product + Design + Engineering | $200–375/hr (L5 → L6 band, full-stack product premium) |
+| [Build Interactive Tutorials for the Versey App](./roles/versey-interactive-tutorials.md) | Versey | Design — Product + Design + Frontend | $150–225/hr (L4 → L5 band) |
+| [Build the Versey Homepage in Astro from a Figma Design](./roles/versey-homepage-astro.md) | Versey | Engineering — Frontend Engineering | $100–175/hr (L3 → L4 band) |
+| [Add Conversion Animations to the Versey Homepage](./roles/versey-homepage-animations.md) | Versey | Design — Design + Frontend | $150–225/hr (L4 → L5 band) |
+| [Automate Versey's Hiring Backend + Outreach](./roles/versey-hiring-platform.md) | Versey | Engineering — Fractional AI Engineering · ongoing, ~10–20 hrs/week | $200–400/hr (L5 → L6 band) |
+| [Build a Creators Use-Case Sub-Page on Versey.ai](./roles/versey-creators-page.md) | Versey | Design — Frontend + Copy + Design | $150–225/hr (L4 → L5 band) |
+| [Build the Claude → Versey Handoff Feature](./roles/versey-claude-handoff.md) | Versey | Product — Backend + Product Engineering | $200–400/hr (L5 → L6 band, AI integration premium) |
+| [Ship Bring-Your-Own API Keys for the Versey App](./roles/versey-byok-api-keys.md) | Versey | Engineering — Backend Engineering (light frontend) | $150–250/hr (L4 → L5 band) |
 
 <!-- TICKETS_OPEN_ROLES_END -->
 
