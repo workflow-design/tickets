@@ -1,12 +1,12 @@
-# Fractional
+# Tao of Fractional
 
-The traditional hiring pipeline was designed in the world of life-long careers & labour-intensive companies.
+The traditional hiring model was designed for world of life-long careers & labour-intensive companies.
 
-As companies shrink, the demand for full-time staff has decreased.
+As companies shrink, the demand for full-time staff has decreased, and the risks of immediately jumping into full-time employment are higher as each new hire is a greater fraction of the company's culture.
 
-At the same time, the best AI-enabled workers are now orders of magnitude more effective than their colleagues and have no means of capitalising on this productivity gain. Their free weekends and evenings are your opportunity.
+At the same time, the best AI-enabled workers are now orders of magnitude more effective than their colleagues and have no means of capitalising on their productivity gain. Their free weekends and evenings are your opportunity.
 
-In principle, most jobs can be delegated to AI, but in practice the jagged edge of AI means a human overseeing the AI is still the right form-factor for delegating work. For example, while coding can be handled by an agent, an over-seeing SWE can: scope well; apply judgement and taste;
+In principle, most jobs can be delegated to AI, but in practice the jagged edge of AI means a human overseeing the AI is still the right form-factor for delegating work. For example, while coding can be handled by an agent, an over-seeing human can do all of the messy taste, judgement and "done done" parts too.
 
 Hiring humans for a fully queryable company is not an anti-pattern, it's a feature. You can now run a Revolut-style innovation studio model with multiple parallel bets on talent and capability.
 

@@ -1,10 +1,10 @@
 # Will's Tickets
 
-Fractional product, engineering and design projects at SF rates.
+Fractional product, engineering, AI and design projects at SF rates.
 
-**[One-click install with Claude](https://claude.ai/new?q=install+the+skills+from+here+https%3A%2F%2Fgithub.com%2Fworkflow-design%2Ftickets)**
+**[Install into Claude.ai](https://claude.ai/new?q=install+the+skills+from+here+https%3A%2F%2Fgithub.com%2Fworkflow-design%2Ftickets)**
 
-For Claude Code, paste this:
+Or install in Claude Code, paste:
 
 ```
 install the skills from this repo https://github.com/workflow-design/tickets
@@ -12,7 +12,9 @@ install the skills from this repo https://github.com/workflow-design/tickets
 
 Rates verified against [levels.fyi](https://www.levels.fyi). No platform fees, no recruiters. Email alerts when a project matches your stack.
 
-Got a project? Post for free. Install the skills above and ask Claude to post. See also our [Hiring Philosophy](./guides/hiring-philosophy/README.md)
+💼 Got a project? Post for free.
+
+Install the skills and ask Claude to post. See also our [Hiring Philosophy](./guides/hiring-philosophy/README.md)
 
 ---
 
@@ -32,7 +34,7 @@ By applying you agree to the [Candidate Terms](./CANDIDATE_TERMS.md); by posting
 
 ---
 
-## Manual Install Instructions
+## Manual Install Instructions & Instructions for AIs
 
 The following skills can be installed in Claude.ai, Claude Cowork or Claude Code.
 
