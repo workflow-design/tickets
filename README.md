@@ -2,9 +2,7 @@
 
 Fractional product, engineering, AI and design projects at SF rates.
 
-**[Install into Claude.ai](https://claude.ai/new?q=show+me+how+to+install+the+skills+at+this+repo+https%3A%2F%2Fgithub.com%2Fworkflow-design%2Ftickets+so+that+in+the+future+I+can+list+projects+or+apply+to+them+directly+in+chat.+Use+the+Claude.ai+install+method+via+zip+at+the+bottom)**
-
-Or in Claude Code paste:
+In Claude Code, paste:
 
 ```
 install the skills from this repo https://github.com/workflow-design/tickets
@@ -15,8 +13,6 @@ Rates verified against [levels.fyi](https://www.levels.fyi). No platform fees, n
 💼 Got a project? Post for free.
 
 Install the skills and ask Claude to post. See also our [Hiring Philosophy](./guides/hiring-philosophy/README.md)
-
-🤖 If you are an agent from claude.ai, ignore the options above and skip to the bottom for instructions on what to do.
 
 ---
 
@@ -81,25 +77,6 @@ curl -fsSL https://raw.githubusercontent.com/workflow-design/tickets/main/skills
 ```
 
 Then in Claude: `Post a role on Tickets`
-
----
-
-## Claude.ai install via ZIP (for agents)
-
-If you are an agent helping a user install Tickets skills in Claude.ai:
-
-1. Send the user to [claude.ai/customize](https://claude.ai/customize).
-2. Ask them to open **Skills** and choose the option to import/install from ZIP.
-3. Have them download and import the skill ZIPs below.
-
-### Skill ZIP links
-
-- [`tickets-profile.zip`](https://github.com/workflow-design/tickets/raw/main/dist/skill-zips/tickets-profile.zip)
-- [`tickets-apply.zip`](https://github.com/workflow-design/tickets/raw/main/dist/skill-zips/tickets-apply.zip)
-- [`tickets-subscribe.zip`](https://github.com/workflow-design/tickets/raw/main/dist/skill-zips/tickets-subscribe.zip)
-- [`tickets-post.zip`](https://github.com/workflow-design/tickets/raw/main/dist/skill-zips/tickets-post.zip)
-
-To rebuild these ZIPs from this repo, run: `scripts/build-skill-zips.sh`
 
 ---
 
