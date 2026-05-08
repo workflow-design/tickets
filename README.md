@@ -54,7 +54,7 @@ In Claude Code, paste:
 install the skills from this repo https://github.com/workflow-design/tickets
 ```
 
-That installs all six skills below. Then talk to Claude in plain English — `Subscribe to Tickets`, `Apply to <role url>`, `Post a role on Tickets`, etc.
+That installs all six skills below. Then talk to Claude in plain English — `Which roles are on tickets atm?`, `Apply to <role url>`, `Post a role on Tickets`, etc.
 
 | Skill               | What it does                                                                 |
 | ------------------- | ---------------------------------------------------------------------------- |
