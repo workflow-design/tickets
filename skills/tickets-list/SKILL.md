@@ -27,7 +27,7 @@ Filters, in priority order:
 ## Step 2 — Fetch
 
 ```bash
-curl -s 'https://tickets-backend-three.vercel.app/api/listings?status=open<&discipline=...>'
+curl -s 'https://app.tckts.work/api/listings?status=open<&discipline=...>'
 ```
 
 If filtering by a single discipline, pass it as a query param (the API supports it). For multi-discipline profiles, fetch all and filter client-side.

@@ -55,13 +55,13 @@ Do not POST without an explicit yes on this turn. A yes earlier in the conversat
 POST to:
 
 ```
-https://tickets-backend-three.vercel.app/api/subscriptions
+https://app.tckts.work/api/subscriptions
 ```
 
 Shape:
 
 ```bash
-curl -X POST https://tickets-backend-three.vercel.app/api/subscriptions \
+curl -X POST https://app.tckts.work/api/subscriptions \
   -H "Content-Type: application/json" \
   -d '{
     "name": "...",

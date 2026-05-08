@@ -107,13 +107,13 @@ Do not POST without an explicit yes on this turn. Previous yes does not count.
 POST to:
 
 ```
-https://tickets-backend-three.vercel.app/api/applications
+https://app.tckts.work/api/applications
 ```
 
 Payload:
 
 ```bash
-curl -X POST https://tickets-backend-three.vercel.app/api/applications \
+curl -X POST https://app.tckts.work/api/applications \
   -H "Content-Type: application/json" \
   -d '{
     "role": "<slug>",

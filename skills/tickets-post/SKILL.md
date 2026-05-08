@@ -80,7 +80,7 @@ Only run this if there's no JD. Conversation, 1–3 questions at a time.
 Check first:
 
 ```bash
-curl -s 'https://tickets-backend-three.vercel.app/api/listings?status=open' \
+curl -s 'https://app.tckts.work/api/listings?status=open' \
   | jq -r '.listings[].company_slug' | sort -u
 ```
 
@@ -187,7 +187,7 @@ Do not POST without an explicit yes on this turn. A previous yes earlier in the 
 ## Submit
 
 ```bash
-curl -X POST https://tickets-backend-three.vercel.app/api/listings \
+curl -X POST https://app.tckts.work/api/listings \
   -H "Authorization: Bearer $TICKETS_AUTHOR_TOKEN" \
   -H "Content-Type: application/json" \
   -d @payload.json
