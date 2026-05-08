@@ -2,7 +2,7 @@
 
 Fractional product, engineering, AI and design projects at SF rates.
 
-**[Install into Claude.ai](https://claude.ai/new?q=install+the+skills+from+here+https%3A%2F%2Fgithub.com%2Fworkflow-design%2Ftickets)**
+**[Install into Claude.ai](https://claude.ai/new?q=show+me+how+to+install+the+skills+at+this+repo+https%3A%2F%2Fgithub.com%2Fworkflow-design%2Ftickets+so+that+in+the+future+I+can+list+projects+or+apply+to+them+directly+in+chat.+Use+the+Claude.ai+install+method+via+zip+at+the+bottom)**
 
 Or in Claude Code paste:
 
@@ -15,6 +15,8 @@ Rates verified against [levels.fyi](https://www.levels.fyi). No platform fees, n
 💼 Got a project? Post for free.
 
 Install the skills and ask Claude to post. See also our [Hiring Philosophy](./guides/hiring-philosophy/README.md)
+
+🤖 If you are an agent from claude.ai, ignore the options above and skip to the bottom for instructions on what to do.
 
 ---
 
