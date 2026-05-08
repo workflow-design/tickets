@@ -3,7 +3,7 @@
 **Company:** [Versey](../companies/versey.md)
 **Type:** Engineering — Fractional AI Engineering · ongoing, ~10–20 hrs/week
 **Rate:** $200–400/hr (L5 → L6 band)
-**Status:** Filled
+**Status:** Open
 
 ---
 
