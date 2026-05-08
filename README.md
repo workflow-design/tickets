@@ -14,11 +14,11 @@
 
 ## How it works
 
-| For candidates                                                            | For employers                                                                                        |
-| :------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------- |
-| **1. Subscribe** — set your stack, disciplines, and rate floor in Claude. | **1. Post — free, no recruiter fees.** Walk through `tickets-post` in Claude. |
-| **2. Match** — get an email the moment a role fits your profile.          | **2. Match** — subscribers whose stack matches yours get alerted automatically.                      |
-| **3. Apply** — one line in Claude submits a tailored application.         | **3. Hire** — every applicant lands directly in your inbox.                                          |
+| For candidates                                                              | For employers                                                                   |
+| :-------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
+| **1. Apply in seconds** via `Apply to <role>` in Claude Code.               | **1. Post free.** Describe your role to Claude Code, it shapes up your listing. |
+| **2. Get matched.** Set your stack once; we email you when a role fits.     | **2. Match** — subscribers whose stack matches yours get alerted automatically. |
+| **3. Get hired.** Employers reply straight from the email.                  | **3. Hire** — every applicant lands directly in your inbox.                     |
 
 ---
 
