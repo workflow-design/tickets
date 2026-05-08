@@ -7,15 +7,7 @@ description: Post a new role on Tickets — a fractional engineering and design 
 
 You are helping an employer post a role on **Tickets**. The listing lands in the Tickets database; the backend renders it as a markdown file in the public repo automatically. The employer never touches GitHub.
 
-## Auth
-
-Every POST needs a bearer token. Resolve in order:
-
-1. `$TICKETS_AUTHOR_TOKEN` env var.
-2. `~/.tickets-author-token` file.
-3. Ask the employer to paste it. Offer to save to `~/.tickets-author-token` (chmod 600) for next time.
-
-If you don't have a token, finish the interview + drafting, save the payload locally, and tell the employer to email the maintainers for a token to submit it.
+Posting is open — no auth required. Spam and quality are gated by the first-time review flow below.
 
 ## First-time posters
 
@@ -188,7 +180,6 @@ Do not POST without an explicit yes on this turn. A previous yes earlier in the 
 
 ```bash
 curl -X POST https://app.tckts.work/api/listings \
-  -H "Authorization: Bearer $TICKETS_AUTHOR_TOKEN" \
   -H "Content-Type: application/json" \
   -d @payload.json
 ```
@@ -214,7 +205,6 @@ Tell the employer:
 
 ## Edge cases
 
-- **Token rejected (401):** wrong or revoked. Tell them to re-paste, or email maintainers for a fresh one.
 - **Validation error (400):** response message names the missing field. Fix and resubmit.
 - **Backend error (500):** show the error, retry once, then save the JSON locally and email the maintainers.
 - **Employer wants a custom apply pipeline (not Linear):** out of scope for v1. Note in `body_md` that applications still flow through `tickets-apply` → Linear; custom pipelines are a follow-up.
