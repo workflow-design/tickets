@@ -2,7 +2,7 @@
 
 # Tickets
 
-** Free jobs board for fractional product, engineering, AI and design projects at SF rates.**
+**Free jobs board for fractional product, engineering, AI and design projects at SF rates.**
 
 ![Rates verified](https://img.shields.io/badge/rates-verified%20against%20levels.fyi-2da44e?style=flat-square) ![Platform fees](https://img.shields.io/badge/platform%20fees-none-0969da?style=flat-square) ![Recruiters](https://img.shields.io/badge/recruiters-none-8957e5?style=flat-square)
 
